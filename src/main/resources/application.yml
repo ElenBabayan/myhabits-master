@@ -1,0 +1,16 @@
+server:
+  port: 4001
+logging:
+  level:
+    com.example.demo: DEBUG
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/habit_tracker
+    username: postgres
+    password: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
